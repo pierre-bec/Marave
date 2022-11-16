@@ -11,6 +11,6 @@ public class RoundMerlin extends Round {
     @Override
     public void run()  {
         System.out.println("Mais c'est Merlin !");
-        this.player.heal(100);
+        this.player.fullHeal();
     }
 }

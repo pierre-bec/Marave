@@ -24,15 +24,19 @@ public class Player extends Human implements IPlayer {
                 "---------------";
     }
 
-    public void heal(int percentage) {
+    public void healOnCurrentPdv(int percentage) {
         int newAmountPdv = this.pdv * (1+(percentage/100));
         this.pdv = Math.min(newAmountPdv, this.maxPdv);
+    }
+
+    public void fullHeal() {
+        this.pdv = this.maxPdv;
     }
 
     public void levelUp() {
         this.level++;
         this.divideSkillPoints(3);
-        this.heal(10);
+        this.healOnCurrentPdv(10);
     }
 
     public void divideSkillPoints(int nbPoints) {
