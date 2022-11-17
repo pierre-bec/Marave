@@ -5,7 +5,7 @@ import Round.Interface.IRound;
 
 public abstract class Round implements IRound {
 
-    public IPlayer player;
+    protected IPlayer player;
 
     public Round(IPlayer player) {
         this.player = player;
