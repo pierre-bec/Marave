@@ -9,7 +9,7 @@ import Utils.Utils;
 
 public class FactoryRound {
 
-    public static IRound createRound(IPlayer entity)  {
+    public IRound createRound(IPlayer entity)  {
         return switch (Utils.roundDice()) {
             case 1, 2 -> new RoundFight(entity);
             case 3 -> new RoundMerlin(entity);

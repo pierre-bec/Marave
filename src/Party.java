@@ -25,7 +25,8 @@ public class Party {
         while (true) {
             System.out.println("Round n°"+nbRound);
             System.out.println(this.player.toString());
-            IRound round = FactoryRound.createRound(this.player);
+            FactoryRound factoryRound = new FactoryRound();
+            IRound round = factoryRound.createRound(this.player);
             round.run();
             if (this.isFinished()) {
                 break;

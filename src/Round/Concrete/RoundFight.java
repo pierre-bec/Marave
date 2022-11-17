@@ -17,7 +17,8 @@ public class RoundFight extends Round {
     private final IEntity ennemy;
     public RoundFight(IPlayer player)  {
         super(player);
-        this.ennemy = FactoryEnemy.createEnemy(player);
+        FactoryEnemy factoryEnemy = new FactoryEnemy();
+        this.ennemy = factoryEnemy.createEnemy(player);
         System.out.println("-----------------------------------------Combat------------------------------------------");
         IEntity attacker;
         IEntity defenser;
