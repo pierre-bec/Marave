@@ -55,4 +55,8 @@ public abstract class Human implements IEntity {
     public int getPdv() {
         return pdv;
     }
+
+    public int getMaxPdv() {
+        return maxPdv;
+    }
 }

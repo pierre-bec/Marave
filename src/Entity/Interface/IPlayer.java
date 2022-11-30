@@ -2,7 +2,7 @@ package Entity.Interface;
 
 public interface IPlayer extends IEntity{
 
-    void healOnCurrentPdv(int percentage);
+    void healOnCurrentPdv(float percentage);
 
     void fullHeal();
 

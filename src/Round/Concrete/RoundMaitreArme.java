@@ -11,6 +11,7 @@ public class RoundMaitreArme extends Round {
     @Override
     public void run() {
         System.out.println("Maitre d'arme : Debout ! ... Bon toutou\n");
+        this.player.divideSkillPoints(3);
         this.player.levelUp();
     }
 }

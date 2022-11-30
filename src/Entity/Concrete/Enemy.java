@@ -5,6 +5,7 @@ import Entity.Abstract.Human;
 public class Enemy extends Human {
 
     public Enemy(int strength, int armor, int pdv) {
+        this.maxPdv = pdv;
         this.strength = strength;
         this.armor = armor;
         this.pdv = pdv;
